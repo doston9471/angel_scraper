@@ -5,10 +5,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  private
-
-    def send_welcome
-      WelcomeWorker.perform_async(self)
-    end
+  def send_welcome
+    WelcomeWorker.perform_async(self.id)
+  end
 
 end
