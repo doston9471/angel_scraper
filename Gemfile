@@ -67,3 +67,6 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 gem 'devise-bootstrapped', github: 'king601/devise-bootstrapped', branch: 'bootstrap4'
 gem 'sidekiq'
+
+gem 'json'
+gem 'bigdecimal'
